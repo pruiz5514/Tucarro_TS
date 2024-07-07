@@ -1,0 +1,13 @@
+{
+    "carros" : [
+        {
+            "id" : "1",
+            "marca": "mercedes",
+            "modelo": "clase CLA 1.6",
+            "anio": 2019,
+            "kilometraje": 53000,
+            "precio": 90000000,
+            "ciudad": "medellin"
+        }
+    ]
+}
