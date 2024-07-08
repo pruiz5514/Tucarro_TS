@@ -1,15 +1,10 @@
 import { Icarros } from "./interfaces/Icarros";
 
 const brandCar = localStorage.getItem("carBrand");
-console.log(brandCar);
+const url = `http://localhost:3000/carros?marca=${brandCar}`
 
-let url:string;
+console.log(url);
 
-if(brandCar === null || brandCar === "home"){
-    url = "http://localhost:3000/carros"
-}else{
-    url = `http://localhost:3000/carros?marca=${brandCar}`
-}
 
 const cardsContainer = document.querySelector(".main_cards-container") as HTMLElement;
 
@@ -54,8 +49,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 document.addEventListener("click", (event:Event) =>{
     const target = event.target as HTMLElement;
     const carBrand: string | null = target.getAttribute('carBrand');
-
-    if(carBrand === "Mercedes-benz" || carBrand === "BMW" || carBrand === "Audi" || carBrand === "home" ){
+    if(carBrand === "Mercedes-benz" || carBrand === "BMW" || carBrand === "Audi" ){
         localStorage.setItem("carBrand",carBrand)
     }
     

@@ -1,14 +1,64 @@
 {
-    "carros" : [
-        {
-            "id" : "1",
-            "img": "https://http2.mlstatic.com/D_NQ_NP_2X_715437-MCO77197011136_072024-F.webp",
-            "marca": "Mercedes-benz",
-            "modelo": "clase CLA 1.6",
-            "anio": 2019,
-            "kilometraje": 53000,
-            "precio": 90000000,
-            "ciudad": "Medellin - Antioquia"
-        }
-    ]
+  "carros": [
+    {
+      "id": "1",
+      "img": "https://http2.mlstatic.com/D_NQ_NP_2X_715437-MCO77197011136_072024-F.webp",
+      "marca": "Mercedes-benz",
+      "modelo": "clase CLA 1.6",
+      "anio": 2019,
+      "kilometraje": 53000,
+      "precio": 90000000,
+      "ciudad": "Medellin - Antioquia"
+    },
+    {
+      "id": "1",
+      "img": "https://http2.mlstatic.com/D_NQ_NP_2X_934468-MCO76445194727_052024-F.webp",
+      "marca": "Mercedes-benz",
+      "modelo": "Clase GLE 3.0 Coupe 4matic",
+      "anio": 2020,
+      "kilometraje": 39500,
+      "precio": 265900000,
+      "ciudad": "Medellin - Antioquia"
+    },
+    {
+      "id": "0de3",
+      "marca": "Mercedes-benz",
+      "modelo": "clase C 300 Amg Line",
+      "precio": 225000000,
+      "img": "https://http2.mlstatic.com/D_NQ_NP_2X_693920-MCO75981769081_042024-E.webp",
+      "kilometraje": 15600,
+      "anio": 2023,
+      "ciudad": "Medellin - Antioquia"
+    },
+    {
+      "id": "68e5",
+      "marca": "BMW",
+      "modelo": "X6 xDrive40i",
+      "precio": 309900000,
+      "img": "https://http2.mlstatic.com/D_NQ_NP_2X_600675-MCO73931785318_012024-F.webp",
+      "kilometraje": 45500,
+      "anio": 2021,
+      "ciudad": "Medellin - Antioquia"
+    },
+    {
+      "id": "32b1",
+      "marca": "BMW",
+      "modelo": "M3 Cs",
+      "precio": 850000000,
+      "img": "https://http2.mlstatic.com/D_NQ_NP_2X_962307-MCO77321143613_062024-F.webp",
+      "kilometraje": 3521,
+      "anio": 2024,
+      "ciudad": "Medellin - Antioquia"
+    },
+    {
+      "id": "11b4",
+      "marca": "Audi",
+      "modelo": "A4",
+      "precio": 179900000,
+      "img": "https://http2.mlstatic.com/D_NQ_NP_2X_742012-MCO77019946111_062024-F.webp",
+      "kilometraje": 0,
+      "anio": 2024,
+      "ciudad": "Medellin - Antioquia"
+    }
+  ]
 }

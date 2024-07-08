@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/register.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <section class="header_left-container">
+           <a href="/dist/index.html"><img class="logo" src="https://expomotor.com.co/wp-content/uploads/2017/05/tu-carro.png" alt="tucarro-logo"></a> 
+        </section>
+        <section class="header_right-container">
+            <nav>
+                <ul>
+                    <li><a href="/dist/pages/brand.html" carBrand = "Mercedes-benz">Mercedes Benz</a></li>
+                    <li><a href="/dist/pages/brand.html" carBrand = "BMW">BMW</a></li>
+                    <li><a href="/dist/pages/brand.html" carBrand = "Audi">Audi</a></li>
+                    <li><a href="/dist/pages/register.html">Registrar carro</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+
+    <main>
+        <h1>Agregar un carro</h1>
+        <form >
+            <div>
+                <label for="brand">Marca</label>
+                <select id="brand" required>
+                    <option selected disabled></option>
+                    <option value="Mercedes-benz">Mercedes-benz</option>
+                    <option value="BMW">BMW</option>
+                    <option value="Audi">Audi</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="model">Modelo</label>
+                <input type="text" id="model" required>
+            </div>
+
+            <div>
+                <label for="price">Precio</label>
+                <input type="number" id="price" required>
+            </div>
+
+            <div>
+                <label for="img-url">URL de la imagen</label>
+                <input type="link" id="img-url" required>
+            </div>
+            
+            <div>
+                <label for="km">Kilometraje</label>
+                <input type="number" id="km" required>
+            </div>
+
+            <div>
+                <label for="anio">Año</label>
+                <input type="number" id="anio" required>
+            </div>
+            
+            <div>
+                <label for="city">Ciudad</label>
+                <input list="cities" id="city" required>
+
+                <datalist id="cities">
+                    <option data-value="Leticia - Amazonas">Leticia - Amazonas</option>
+                    <option data-value="Medellin - Antioquia">Medellin - Antioquia</option>
+                    <option data-value="Arauca - Arauca">Arauca - Arauca</option>
+                    <option data-value="Barranquilla - Atlantico">Barranquilla - Atlantico</option>
+                    <option data-value="Cartagena - Bolivar">Cartagena - Bolivar</option>
+                    <option data-value="Tunja - Boyaca">Tunja - Boyaca</option>
+                    <option data-value="Manizales - Caldas">Manizales - Caldas</option>
+                    <option data-value="Florencia - Caqueta">Florencia - Caqueta</option>
+                    <option data-value="Yopal - Casanare">Yopal - Casanare</option>
+                    <option data-value="Popayan - Cauca">Popayan - Cauca</option>
+                    <option data-value="Valledupar - Cesar">Valledupar - Cesar</option>
+                    <option data-value="Quibdo - Choco">Quibdo - Choco</option>
+                    <option data-value="Monteria - Cordoba">Monteria - Cordoba</option>
+                    <option data-value="Bogota - Cundinamarca">Bogota - Cundinamarca</option>
+                    <option data-value="Puerto Inirida - Guainia">Puerto Inirida - Guainia</option>
+                    <option data-value="San Jose del Guaviare - Guaviare">San Jose del Guaviare - Guaviare</option>
+                    <option data-value="Neiva - Huila">Neiva - Huila</option>
+                    <option data-value="Riohacha - La Guajira">Riohacha - La Guajira</option>
+                    <option data-value="Santa Marta - Magdalena">Santa Marta - Magdalena</option>
+                    <option data-value="Villavicencio - Meta">Villavicencio - Meta</option>
+                    <option data-value="Pasto - Narino">Pasto - Narino</option>
+                    <option data-value="Cucuta - Norte de Santander">Cucuta - Norte de Santander</option>
+                    <option data-value="Mocoa - Putumayo">Mocoa - Putumayo</option>
+                    <option data-value="Armenia - Quindio">Armenia - Quindio</option>
+                    <option data-value="Pereira - Risaralda">Pereira - Risaralda</option>
+                    <option data-value="San Andres - San Andres y Providencia">San Andres - San Andres y Providencia</option>
+                    <option data-value="Bucaramanga - Santander">Bucaramanga - Santander</option>
+                    <option data-value="Sincelejo - Sucre">Sincelejo - Sucre</option>
+                    <option data-value="Ibague - Tolima">Ibague - Tolima</option>
+                    <option data-value="Cali - Valle del Cauca">Cali - Valle del Cauca</option>
+                    <option data-value="Mitu - Vaupes">Mitú - Vaupes</option>
+                    <option data-value="Puerto Carreño - Vichada">Puerto Carreño - Vichada</option>
+                </datalist>
+            </div>
+            
+            <div class = "form_button-container">
+                <button type="submit" id = "send-button"> Enviar </button>
+            </div>
+        </form>
+    </main>
+
+    <script type="module" src="/dist/register.js"></script>
+</body>
+</html>

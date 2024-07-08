@@ -65,57 +65,49 @@ main{
     width: 100%;
     min-height: calc(100vh - 75px);
     background: var(--gray);
+    padding-top: 20px;
+    padding-bottom: 50px;
 }
 
-.main_cards-container{
-    padding: 50px;
-    width: 90%;
+h1{
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+form{
+    width: 40%;
     margin: 0 auto;
     display: flex;
-    flex-wrap: wrap;
-    gap: 40px;
+    flex-direction: column;
+    gap: 20px;
+}
+
+label{
+    margin-right: 20px;
+}
+
+input, select{
+    width: 100%;
+    height: 35px;
+    font-size: 16px;
+    padding: 0 10px;
+    border-radius: 8px;
+    border: 1px solid #737373;
+}
+
+.form_button-container{
+    width: 100%;
+    display: flex;
     justify-content: center;
 }
 
-article{
-    width: 284px;
-    height: 395px;
-    background: var(--white);
-    border-radius: 8px;
-    transition: box-shadow 0.3s ease-in;
-    cursor: pointer;
-}
-
-article:hover{
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
-    
-}
-
-.carImage{
-    width: 100%;
-    height: 230px;
-    margin-bottom: 15px;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-}
-
-.card_info-container{
-    padding: 0 15px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.text-info{
-    font-size: 14px;
-}
-
-.price {
-    font-size: 27px;
-    font-weight: 400;
-}
-
-.city{
-    font-size: 12px;
-    color: #737373;
+.form_button-container button{
+    width: 100px;
+    height: 35px;
+    background-color: #3483fa;
+    color: var(--white);
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
 }
