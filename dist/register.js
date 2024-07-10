@@ -42,4 +42,11 @@ function addCar() {
         });
     });
 }
+document.addEventListener("click", (event) => {
+    const target = event.target;
+    const carBrand = target.getAttribute('carBrand');
+    if (carBrand === "Mercedes-benz" || carBrand === "BMW" || carBrand === "Audi" || carBrand === "home") {
+        localStorage.setItem("carBrand", carBrand);
+    }
+});
 export {};

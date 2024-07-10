@@ -38,3 +38,13 @@ async function addCar():Promise<void>{
         body: JSON.stringify(newCar)
     })
 }
+
+document.addEventListener("click", (event:Event) =>{
+    const target = event.target as HTMLElement;
+    const carBrand: string | null = target.getAttribute('carBrand');
+
+    if(carBrand === "Mercedes-benz" || carBrand === "BMW" || carBrand === "Audi" || carBrand === "home" ){
+        localStorage.setItem("carBrand",carBrand)
+    }
+    
+})
